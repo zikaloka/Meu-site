@@ -19,14 +19,14 @@
         const row= document.createElement("tr");
 
         row.innerHTML=`
-            <td>${car.name}</td>    
-            <td>${car.licence}</td>
-            <td data-time="${car.time}">${new Date(car.time).
+            <td class="fonteGrande">${car.name}</td>    
+            <td class="fonteGrande">${car.licence}</td>
+            <td class="fonteGrande" data-time="${car.time}">${new Date(car.time).
                     toLocaleString("pt-BR", {
                             hour: "numeric", minute: "numeric"
                         })}</td>
             <td>
-                <button class="delete">X</button>
+                <button class="delete button">X</button>
             </td>
         `;
 

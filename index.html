@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Near Estacionamentos</title>
-    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href=style.css type="text/css">
 </head>
 <body>
-    <div>
-        <input type="text" id="name" placeholder="Digite o nome do veiculo" autocomplete="off">
-        <input type="text" id="licence" placeholder="Digite o nome do veiculo"autocomplete="off">
-        <button id="send">Registrar</button>
+    <h1 class="espacamento fonteCinza titulo">Near Estacionamentos</h1>
+    <div class="espacamentoTopLeft">
+        <input class="input" type="text" id="name" placeholder="Digite o nome do veiculo" autocomplete="off">
+        <input class="input" type="text" id="licence" placeholder="Digite a placa do veiculo"autocomplete="off">
+        <button class="button" id="send">Registrar</button>
     </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Veículo</th>
-                <th>Placa</th>
-                <th>Horário</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
+    <div class="caixa">
+        <table class="espacamentoTopLeft">
+            <thead>
+                <tr>
+                    <th class="espacamento fonteGrande fonteCinza">Veículo</th>
+                    <th class="espacamento fonteGrande fonteCinza">Placa</th>
+                    <th class="espacamento fonteGrande fonteCinza">Horário</th>
+                    <th class="espacamento fonteGrande fonteCinza">Ações</th>
+                </tr>
+            </thead>
         <tbody id="garage"></tbody>
-    </table>
+        </table>
+    </div>
+    
 
 </body>
 <script src="./main.js"></script>
